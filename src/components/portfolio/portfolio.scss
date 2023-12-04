@@ -13,13 +13,20 @@
 		font-size: 36px;
 
 		@include mobile {
-			padding-top: 70px;
+			h1 {
+				display: none;
+			}
+
+			
 			font-size: 24px;
 		}
 
 		.progressbar {
 			height: 10px;
 			background-color: white;
+			@include mobile{
+				margin-top: 50px;
+			}
 		}
 	}
 
