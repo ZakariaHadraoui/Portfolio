@@ -1,9 +1,11 @@
 {
+  "homepage": "https://ZakariaHadraoui.github.io/Portfolio",
   "name": "fullportfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy": "vite build && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -25,6 +27,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.0",
     "vite": "^5.0.0"
   }
 }

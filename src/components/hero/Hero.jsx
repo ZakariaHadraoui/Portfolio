@@ -47,7 +47,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HADRAOUI ZAKARIA</motion.h2>
+          <motion.h2 variants={textVariants} >HADRAOUI ZAKARIA</motion.h2>
           <motion.h1 variants={textVariants}>
             Front-End React  developer 👋🏼
           </motion.h1>
@@ -74,7 +74,7 @@ const Hero = () => {
         Coder UI Designer and React lover
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <img src="hero.png" alt="" />
       </div>
     </div>
   );

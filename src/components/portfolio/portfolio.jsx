@@ -6,19 +6,19 @@ const items = [
 	{
 		id: 1,
 		title: "React Commerce",
-		img: "/zakshop.png",
+		img: "zakshop.png",
 		desc: "Created a seamless and intuitive shopping cart system using React, prioritizing efficiency and user satisfaction in the online shopping experience.",
 	},
 	{
 		id: 2,
 		title: "Javascript Quiz",
-		img: '/quiz.png',
+		img: 'quiz.png',
 		desc: 'Developed a sleek and responsive Javascript navbar, combining aesthetics with functionality to provide easy navigation and an enhanced user interface for my portfolio.'
 	},
 	{
 		id: 3,
 		title: "Javascript responsive Navbar",
-		img: '/navbar.png',
+		img: 'navbar.png',
 		desc: 'Engineered an interactive React quiz application, blending engaging user interactions with dynamic content to deliver an enjoyable and educational experience within my portfolio.'
 	},
 
