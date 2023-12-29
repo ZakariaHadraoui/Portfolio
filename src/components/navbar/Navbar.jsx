@@ -12,7 +12,6 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1.3 }}
           transition={{ duration: 0.5 }}
         >
-          Zakaria.Dev
         </motion.span>
         <div className="social">
           <a href="https://github.com/ZakariaHadraoui" target="_blank">

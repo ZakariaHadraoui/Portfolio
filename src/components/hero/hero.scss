@@ -34,7 +34,7 @@
         letter-spacing: 10px;
       }
 
-     
+
 
       h2 {
         font-size: 30px;
@@ -87,11 +87,12 @@
       height: 100%;
       object-fit: cover;
     }
+
     @media screen and (max-width:600px) {
-      img{
+      img {
         display: none;
       }
-  
+
     }
   }
 
@@ -105,11 +106,12 @@
     width: 50%;
     font-weight: bold;
   }
+
   @media screen and (max-width:700px) {
     .slidingTextContainer {
       display: none;
     }
 
-    
+
   }
 }

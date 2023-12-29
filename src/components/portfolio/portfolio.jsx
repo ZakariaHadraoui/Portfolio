@@ -5,22 +5,12 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
 	{
 		id: 1,
-		title: "React Commerce",
-		img: "zakshop.png",
-		desc: "Created a seamless and intuitive shopping cart system using React, prioritizing efficiency and user satisfaction in the online shopping experience.",
+		title: "Laravel Blog Application",
+		img: "blogapp.png",
+		demo: '',
+		desc: "Created an interactive blog application using laravel where the user can add , edit or delete a post and all of this is managed in the database",
 	},
-	{
-		id: 2,
-		title: "Javascript Quiz",
-		img: 'quiz.png',
-		desc: 'Developed a sleek and responsive Javascript navbar, combining aesthetics with functionality to provide easy navigation and an enhanced user interface for my portfolio.'
-	},
-	{
-		id: 3,
-		title: "Javascript responsive Navbar",
-		img: 'navbar.png',
-		desc: 'Engineered an interactive React quiz application, blending engaging user interactions with dynamic content to deliver an enjoyable and educational experience within my portfolio.'
-	},
+
 
 ];
 
@@ -37,16 +27,17 @@ const Single = ({ item }) => {
 	return (
 		<section >
 			<div className="container">
-				<div className="wrapper">
-					<div className="imagecontainer" ref={ref}>
+				<motion.div className="wrapper"  >
+					<motion.div className="imagecontainer" ref={ref}>
 						<img src={item.img} alt="" />
-					</div>
-					<motion.div className="textcontainer" style={{ y }}>
+					</motion.div>
+					<motion.div className="textcontainer" >
 						<h2>{item.title}</h2>
 						<p>{item.desc}</p>
-						<button>Demo Will be available soon</button>
+						<a href={item.demo} target="_blank"><button > Demo   </button>
+						</a>
 					</motion.div>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);
@@ -60,17 +51,10 @@ const Portfolio = () => {
 		offset: ["start start", "end end"],
 	});
 
-	const scaleX = useSpring(scrollYProgress, {
-		stiffness: 100,
-		damping: 30,
-	});
+
 
 	return (
 		<div className="portfolio" ref={ref}>
-			<div className="progress">
-				<h1>My Projects</h1>
-				<motion.div style={{ scaleX }} className="progressbar"></motion.div>
-			</div>
 			{items.map((item) => (
 				<Single item={item} key={item.id} />
 			))}

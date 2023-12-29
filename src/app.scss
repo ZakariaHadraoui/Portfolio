@@ -1,5 +1,4 @@
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -27,7 +26,6 @@ a {
 section {
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: center;
   overflow: hidden;
 }
 

@@ -47,17 +47,7 @@ const Contact = () => {
 					<span>0691407941</span>
 				</motion.div>
 			</motion.div>
-			<div className="formContainer">
-				<motion.div
-					className="phoneSvg"
-					initial={{ opacity: 1 }}
-					whileInView={{ opacity: 0 }}
-					transition={{ delay: 3, duration: 1 }}
-				>
-
-				</motion.div>
-
-			</div>
+			
 		</motion.div>
 	);
 };
